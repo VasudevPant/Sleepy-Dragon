@@ -183,7 +183,7 @@ def subtract_life():
     lives -= 1
     if lives == 0:
         game_over = True
-        reset_required = False
+    reset_required = False
 
             
 pgzrun.go()
