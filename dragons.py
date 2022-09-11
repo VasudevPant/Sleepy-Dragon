@@ -72,11 +72,6 @@ def draw():
         draw_counters(eggs_collected, lives)
 
 def draw_lairs(lairs_to_draw):
-    pass
-def draw_counters(eggs_collected, lives):
-    pass
-
-def draw_lairs(lairs_to_draw):
     for lair in lairs_to_draw:
         lair["dragon"].draw()
         if lair["egg_hidden"] is False:
@@ -113,9 +108,6 @@ def update():
         if hero.y < 0:
             hero.y = 0
     check_for_collisions()
-
-def check_for_collisions():    
-    pass
 
 def update_lairs():
     global lairs, hero, lives
